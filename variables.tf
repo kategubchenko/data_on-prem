@@ -13,7 +13,7 @@ variable "scalr_url" {
 
 variable "opa_version" {
   description = "OPA version used to create policy group. Should be one of available with current instance."
-  default     = "0.32.0"
+  default     = "0.21.0"
 }
 
 variable "policy_vcs-repo_identifier" {
@@ -71,4 +71,5 @@ variable "ws-vcs_vcs-repo_branch" {
 
 variable "ws-vcs_workdir" {
   description = "Working directory (path) used to create workspace. Submit blank if configuration is located in the repository root."
+
 }
