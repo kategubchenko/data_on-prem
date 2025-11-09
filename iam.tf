@@ -10,7 +10,6 @@ resource "scalr_role" "role" {
   permissions = [
     "*:read",
     "*:update",
-    "*:delete",
     "*:create"
   ]
 }
@@ -33,4 +32,5 @@ resource "scalr_access_policy" "access-policy" {
 resource "scalr_service_account" "no_permissions_service_acc" {
   name   = "service-account-${formatdate("DDMMYYYY", timestamp())}"
   status = "Active"
+
 }
